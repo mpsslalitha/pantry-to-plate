@@ -1,0 +1,291 @@
+/*.pantry-page {*/
+/*    padding: 2rem;*/
+/*    max-width: 1000px;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.pantry-header {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*    margin-bottom: 1rem;*/
+/*}*/
+
+/*.pantry-header h2 {*/
+/*    font-size: 1.8rem;*/
+/*}*/
+
+/*.pantry-header button {*/
+/*    padding: 0.5rem 1rem;*/
+/*    background-color: #00bcd4;*/
+/*    color: white;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.pantry-list {*/
+/*    display: grid;*/
+/*    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));*/
+/*    gap: 1rem;*/
+/*}*/
+
+/*.pantry-card {*/
+/*    background: #fff;*/
+/*    border: 1px solid #ddd;*/
+/*    border-radius: 8px;*/
+/*    padding: 1rem;*/
+/*    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);*/
+/*}*/
+
+/*.pantry-card h3 {*/
+/*    margin-top: 0;*/
+/*}*/
+
+/*.pantry-buttons {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    margin-top: 1rem;*/
+/*}*/
+
+/*.pantry-buttons button {*/
+/*    padding: 0.4rem 0.8rem;*/
+/*    border: none;*/
+/*    border-radius: 4px;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/*.pantry-buttons button:first-child {*/
+/*    background-color: #ff5252;*/
+/*    color: white;*/
+/*}*/
+
+/*.pantry-buttons button:last-child {*/
+/*    background-color: #ccc;*/
+/*    color: black;*/
+/*}*/
+/*.modal-overlay {*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    bottom: 0;*/
+/*    background-color: rgba(0, 0, 0, 0.5);*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    z-index: 1000;*/
+/*}*/
+
+/*.modal {*/
+/*    !*background: white;*!*/
+/*    !*padding: 2rem;*!*/
+/*    border-radius: 8px;*/
+/*    max-width: 500px;*/
+/*    width: 90%;*/
+/*    position: relative;*/
+/*}*/
+
+/*.modal-close {*/
+/*    position: absolute;*/
+/*    top: 8px;*/
+/*    right: 12px;*/
+/*    font-size: 20px;*/
+/*    background: transparent;*/
+/*    border: none;*/
+/*    cursor: pointer;*/
+/*}*/
+
+/* ========== Pantry Page Styles ========== */
+.pantry-page {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.pantry-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.pantry-header h2 {
+    font-size: 1.8rem;
+}
+
+.pantry-header button {
+    width: 50%;
+    padding: 0.5rem 1rem;
+    background-color: #00bcd4;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pantry-header button:hover {
+    background-color: #0097a7;
+}
+
+.pantry-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1rem;
+}
+
+.pantry-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.06);
+}
+
+.pantry-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.pantry-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+
+.pantry-buttons button {
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.pantry-buttons button:first-child {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.pantry-buttons button:first-child:hover {
+    background-color: #e53935;
+}
+
+.pantry-buttons button:last-child {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.pantry-buttons button:last-child:hover {
+    background-color: #e0e0e0;
+}
+
+/* ========== Modal Overlay ========== */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ========== Modal Container ========== */
+.modal {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* ========== Close Button ========== */
+.modal-close {
+    position: absolute;
+    /*top: 10px;*/
+    /*right: 16px;*/
+    margin: 4px;
+    padding: 0;
+    font-size: 1.5rem;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s;
+}
+
+.modal-close:hover {
+    background-color: white;
+    color: #000;
+}
+
+/* ========== Pantry Form ========== */
+form{
+    margin: 0;
+}
+.pantry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.pantry-form input,
+.pantry-form select,
+.pantry-form textarea {
+    padding: 0.65rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.pantry-form input:focus,
+.pantry-form select:focus,
+.pantry-form textarea:focus {
+    border-color: #00bcd4;
+    background-color: #fff;
+    outline: none;
+}
+
+.pantry-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.pantry-form button[type="submit"] {
+    padding: 0.75rem;
+    background-color: #00bcd4;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pantry-form button[type="submit"]:hover {
+    background-color: #0097a7;
+}
+
+/* Optional Scrollbar */
+.modal::-webkit-scrollbar {
+    width: 8px;
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
